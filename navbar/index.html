@@ -4,8 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        nav {
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+        }
+
+        nav div {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav div a {
+            text-decoration: none;
+            color: white;
+            padding: 16px;
+        }
+
+        button {
+            margin: 10px;
+            background-color: #EA4C89;
+            border-radius: 8px;
+            border-style: none;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px;
+            line-height: 20px;
+            list-style: none;
+            outline: none;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            transition: color 100ms;
+            vertical-align: baseline;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        button:active {
+            background-color: #F082AC;
+        }
+
+        .logo {
+            height: 30px;
+            filter: invert(65%) sepia(40%) saturate(516%) hue-rotate(290deg) brightness(95%) contrast(90%);
+        }
+
+        #works, #about, #contacts, #testimonials {
+            padding: 25vw;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        #works, #about {
+            background-color: #F082AC;
+            color: black;
+        }
+
+        #contacts, #testimonials {
+            background-color: black;
+            color: #F082AC;
+        }
+
+    </style>
 </head>
 <body>
+<nav role="navigation">
+    <div class="left">
+        <a href="#">
+            <img src="icon.svg" alt="ICON" class="logo"/>
+            <img src="icon.svg" alt="ICON" class="logo"/>
+            <img src="icon.svg" alt="ICON" class="logo"/>
+        </a>
+    </div>
+    <div class="right">
+        <a href="#works">My Works</a>
+        <a href="#contacts">Contacts</a>
+        <a href="#about">About Me</a>
+        <a href="#testimonials">Testimony</a>
+        <button>Contact Me</button>
+    </div>
+</nav>
 
+<div id="works">
+    My Works
+</div>
+<div id="contacts">
+    Contact
+</div>
+<div id="about">
+    About
+</div>
+<div id="testimonials">
+    Testimonials
+</div>
 </body>
 </html>
